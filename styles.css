@@ -1,0 +1,812 @@
+* {
+  margin: 0;
+}
+/* Navigation Bar*/
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.buttons {
+  margin-right: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+.buttons a {
+  float: right;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  scale: 1.15;
+  transition: all 0.3s ease;
+}
+.topnav a:active {
+  color: black;
+  scale: 1.3;
+  transition: all 0.3s ease;
+}
+.mainPage {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.picture {
+  height: 100vh;
+  /* border: 5px solid #000000;*/
+  margin-top: 60px;
+  float: right;
+}
+.descriptionBox {
+  padding-top: 6rem;
+  text-align: center;
+  /*border: 5px solid #ff0000;*/
+  width: 100%;
+  height: 100vh;
+  transform: translate(0, 12%);
+  /* margin-left: -3%; */
+  align-self: center;
+}
+.description {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  padding: 5%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+.title {
+  width: 100%;
+  transform: translate(0, 0);
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  align-items: center;
+}
+.name {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  color: dimgray;
+  letter-spacing: 0.1rem;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.para {
+  text-align: right;
+  width: auto;
+  padding-right: 15%;
+}
+
+.buttonsBox {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  color: dimgray;
+  font-size: 1.1rem;
+  display: inline-flex;
+}
+.experience {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  color: black;
+  font-size: 1.2rem;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.projects {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  color: black;
+  font-size: 1.2rem;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.experience:hover {
+  font-size: 1.4rem;
+  color: blue;
+  transition: all 0.3s ease;
+}
+.projects:hover {
+  font-size: 1.4rem;
+  color: blue;
+  transition: all 0.3s ease;
+}
+.description a {
+  color: black;
+  text-decoration: none;
+}
+.description a:hover {
+  color: blue;
+}
+
+.projectsPage {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+.projectsList {
+  align-items: center;
+  align-content: center;
+  width: auto;
+  padding: 1% 5%;
+}
+.projectsTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  color: white;
+}
+.firstProject {
+  height: 70vh;
+  width: 565px;
+  background-color: aqua;
+  float: left;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.firstProject h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
+}
+.firstProject p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding: 0 1rem;
+  font-size: 4rem;
+  transform: translate(0, -20%);
+}
+.firstProject:hover {
+  /*opacity: 30%;*/
+  background-color: darkcyan;
+  transition: all 0.3s ease;
+}
+
+.secondProject {
+  height: 70vh;
+  width: 565px;
+  background-color: aqua;
+  float: right;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.secondProject h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
+}
+.secondProject p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding: 0 1rem;
+  font-size: 4rem;
+  transform: translate(0, -20%);
+}
+.secondProject:hover {
+  /*opacity: 30%;*/
+  background-color: darkcyan;
+  transition: all 0.3s ease;
+}
+
+.experiencePage {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.experienceList {
+  align-items: center;
+  align-content: center;
+  width: auto;
+  padding: 1% 5%;
+}
+.experienceTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  color: black;
+}
+.firstExperience {
+  height: 70vh;
+  width: 565px;
+  background-color: aqua;
+  float: left;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.firstExperience h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
+}
+.firstExperience p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding: 0 1rem;
+  font-size: 4rem;
+  transform: translate(0, -20%);
+}
+.firstExperience:hover {
+  /* opacity: 30%;*/
+  background-color: rgb(164, 253, 255);
+  transition: all 0.3s ease;
+}
+.secondExperience {
+  height: 70vh;
+  width: 565px;
+  background-color: aqua;
+  float: right;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.secondExperience h1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.5rem;
+}
+.secondExperience p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  padding: 0 1rem;
+  font-size: 4rem;
+  transform: translate(0, -20%);
+}
+.secondExperience:hover {
+  /* opacity: 30%;*/
+  background-color: rgb(164, 253, 255);
+  transition: all 0.3s ease;
+}
+
+.footer {
+  background-color: black;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.footer h1 {
+  display: block;
+  float: left;
+  color: white;
+  padding: 1rem 2rem;
+}
+li:nth-child(1) {
+  display: block;
+  float: left;
+  /*position: relative;*/
+  text-decoration: none;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+li:nth-child(1):hover {
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+li:nth-child(1) img {
+  width: 50px;
+}
+li:nth-child(1) p {
+  color: white;
+  /*position: absolute;*/
+  top: 50%;
+  /*transform: translate(0, 150%);*/
+}
+li:nth-child(2) {
+  display: block;
+  float: left;
+  /*position: relative;*/
+  text-decoration: none;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+li:nth-child(2):hover {
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+li:nth-child(2) img {
+  width: 50px;
+}
+li:nth-child(2) p {
+  color: white;
+  /*position: absolute;*/
+  top: 50%;
+  /*transform: translate(15%, 150%);*/
+  transform: translate(10%, 0);
+}
+
+li:nth-child(3) {
+  /*position: relative;*/
+  display: block;
+  float: left;
+  text-decoration: none;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+li:nth-child(3):hover {
+  scale: 1.1;
+  transition: all 0.3s ease;
+}
+li:nth-child(3) img {
+  width: 45px;
+}
+li:nth-child(3) p {
+  color: white;
+  /*position: absolute;*/
+  top: 50%;
+  /*transform: translate(-11%, 150%);*/
+  transform: translate(-12%, 30%);
+}
+li:nth-child(4) {
+  color: white;
+  /*position: relative;*/
+  display: block;
+  float: left;
+  padding: 2rem 0;
+  /*transform: translate(180%, 25%);*/
+  list-style-type: none;
+  transform: translate(0, 40%);
+}
+#info {
+  color: white;
+  padding: 2rem;
+}
+
+/* buttonsle de navigare au bara jos */
+.highlight {
+  border-bottom: 4px solid black;
+  scale: 1.2;
+}
+
+.moreInfo {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1291px) {
+  .picture {
+    height: 90vh;
+    margin-top: 120px;
+    margin-left: -6rem;
+  }
+  .projectsTitle {
+    margin-left: 5rem;
+  }
+
+  .firstProject {
+    width: 400px;
+  }
+  .secondProject {
+    width: 400px;
+  }
+
+  .experienceTitle {
+    margin-left: 5rem;
+  }
+
+  .firstExperience {
+    width: 400px;
+  }
+  .secondExperience {
+    width: 400px;
+  }
+  .highlight {
+    border-bottom: 4px solid black;
+    scale: 1;
+  }
+}
+
+@media screen and (max-width: 1066px) {
+  .topnav a:hover {
+    scale: 1.05;
+  }
+  .topnav a:active {
+    scale: 1.1;
+  }
+
+  .highlight {
+    border-bottom: 3px solid black;
+  }
+  .descriptionBox {
+    transform: translate(0, 0%);
+  }
+  .picture {
+    height: 80vh;
+    margin-top: 120px;
+    margin-left: -7rem;
+    transform: translate(0%, 10%);
+  }
+  .projectsTitle {
+    margin-left: 4rem;
+  }
+
+  .firstProject {
+    width: 350px;
+  }
+  .secondProject {
+    width: 350px;
+  }
+
+  .experienceTitle {
+    margin-left: 4rem;
+  }
+
+  .firstExperience {
+    width: 350px;
+  }
+  .secondExperience {
+    width: 350px;
+  }
+
+  .footer h1 {
+    padding: 0rem;
+    transform: translate(10%, 0%);
+  }
+  li:nth-child(1) {
+    padding: 1.2rem;
+  }
+  li:nth-child(2) {
+    padding: 1.2rem;
+  }
+  li:nth-child(3) {
+    padding: 1.2rem;
+  }
+  li:nth-child(4) {
+    padding: 1rem;
+    transform: translate(0%, 50%);
+  }
+}
+
+@media screen and (max-width: 865px) {
+  .name {
+    font-size: 1.2rem;
+    padding: 7px 8px;
+  }
+  .picture {
+    height: 70vh;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -280px;
+    margin-top: 5px;
+  }
+
+  .descriptionBox {
+    height: 50vh;
+    width: 100%;
+    transform: translate(0, 50vh);
+  }
+  .description {
+    padding: 4%;
+    padding-top: 0px;
+    font-size: 1.3rem;
+    margin-bottom: -10px;
+  }
+
+  .projectsTitle {
+    margin-left: 0rem;
+  }
+
+  .firstProject {
+    width: 300px;
+  }
+  .firstProject h1 {
+    font-size: 1.2rem;
+  }
+  .firstProject p {
+    font-size: 3rem;
+  }
+  .secondProject {
+    width: 300px;
+  }
+  .secondProject h1 {
+    font-size: 1.2rem;
+  }
+  .secondProject p {
+    font-size: 3rem;
+  }
+
+  .experienceTitle {
+    margin-left: 0rem;
+  }
+
+  .firstExperience {
+    width: 300px;
+  }
+  .firstExperience h1 {
+    font-size: 1.2rem;
+  }
+  .firstExperience p {
+    font-size: 3rem;
+  }
+  .secondExperience {
+    width: 300px;
+  }
+  .secondExperience h1 {
+    font-size: 1.2rem;
+  }
+  .secondExperience p {
+    font-size: 3rem;
+  }
+
+  .buttons {
+    margin-right: 1rem;
+  }
+  .buttons a {
+    padding: 7px 8px;
+  }
+
+  .highlight {
+    border-bottom: 3px solid black;
+  }
+
+  .footer h1 {
+    padding: 0rem;
+    transform: translate(10%, 0%);
+  }
+  li:nth-child(1) {
+    padding: 0.5rem;
+  }
+  li:nth-child(2) {
+    padding: 0.5rem;
+  }
+  li:nth-child(3) {
+    padding: 0.5rem;
+  }
+  li:nth-child(4) {
+    padding: 0.1rem;
+    transform: translate(0%, 150%);
+  }
+}
+@media screen and (max-width: 739px) {
+  .picture {
+    height: 60vh;
+    margin-left: -245px;
+  }
+  .descriptionBox {
+    height: 50vh;
+    width: 100%;
+    transform: translate(0, 45vh);
+  }
+  .firstProject {
+    width: 250px;
+  }
+  .firstProject h1 {
+    font-size: 1rem;
+  }
+  .firstProject p {
+    font-size: 2rem;
+  }
+  .secondProject {
+    width: 250px;
+  }
+  .secondProject h1 {
+    font-size: 1rem;
+  }
+  .secondProject p {
+    font-size: 2rem;
+  }
+
+  .firstExperience {
+    width: 250px;
+  }
+  .firstExperience h1 {
+    font-size: 1rem;
+  }
+  .firstExperience p {
+    font-size: 2rem;
+  }
+  .secondExperience {
+    width: 250px;
+  }
+  .secondExperience h1 {
+    font-size: 1rem;
+  }
+  .secondExperience p {
+    font-size: 2rem;
+  }
+
+  .footer h1 {
+    padding: 0rem;
+    transform: translate(10%, 0%);
+  }
+  li:nth-child(1) {
+    padding: 0.1rem;
+  }
+  li:nth-child(2) {
+    padding: 0.1rem;
+  }
+  li:nth-child(3) {
+    padding: 0.1rem;
+  }
+  li:nth-child(4) {
+    padding: 0.1rem;
+    transform: translate(0%, 250%);
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 584px) {
+  .topnav {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+  }
+  .name {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+  .buttons a {
+    opacity: 0;
+    font-size: 0;
+  }
+  .picture {
+    height: 50vh;
+    margin-left: -205px;
+  }
+  .descriptionBox {
+    height: 50vh;
+    width: 100%;
+    transform: translate(0, 35vh);
+  }
+  .experiencePage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .experienceTitle {
+    margin-top: -10px;
+  }
+  .experienceList {
+    /*border: 5px solid red;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projectsPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projectsTitle {
+    margin-top: -10px;
+  }
+  .projectsList {
+    /*border: 5px solid red;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .firstProject {
+    height: 40vh;
+    width: 400px;
+    float: center;
+  }
+  .firstProject h1 {
+    font-size: 1rem;
+  }
+  .firstProject p {
+    font-size: 2rem;
+  }
+  .secondProject {
+    height: 40vh;
+    width: 400px;
+    float: center;
+    margin-top: 10px;
+  }
+  .secondProject h1 {
+    font-size: 1rem;
+  }
+  .secondProject p {
+    font-size: 2rem;
+  }
+
+  .firstExperience {
+    height: 40vh;
+    width: 400px;
+    float: center;
+  }
+  .firstExperience h1 {
+    font-size: 1rem;
+  }
+  .firstExperience p {
+    font-size: 2rem;
+  }
+  .secondExperience {
+    height: 40vh;
+    width: 400px;
+    float: center;
+    margin-top: 10px;
+  }
+  .secondExperience h1 {
+    font-size: 1rem;
+  }
+  .secondExperience p {
+    font-size: 2rem;
+  }
+
+  .footer h1 {
+    padding: 0rem;
+    transform: translate(10%, -50%);
+  }
+  li:nth-child(1) {
+    padding: 0.3rem;
+  }
+  li:nth-child(2) {
+    padding: 0.3rem;
+  }
+  li:nth-child(3) {
+    padding: 0.3rem;
+  }
+  li:nth-child(4) {
+    padding: 0.1rem;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .picture {
+    margin-left: -200px;
+  }
+
+  .footer h1 {
+    padding: 0rem;
+    transform: translate(10%, -50%);
+  }
+  li:nth-child(1) {
+    padding: 0.3rem;
+  }
+  li:nth-child(2) {
+    padding: 0.3rem;
+  }
+  li:nth-child(3) {
+    padding: 0.3rem;
+  }
+  li:nth-child(4) {
+    padding: 0.1rem;
+    transform: translate(-50%, 0);
+  }
+}
