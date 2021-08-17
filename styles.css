@@ -603,8 +603,9 @@ li:nth-child(4) {
 }
 @media screen and (max-width: 739px) {
   .picture {
-    height: 60vh;
-    margin-left: -245px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .descriptionBox {
     height: 50vh;
@@ -684,8 +685,8 @@ li:nth-child(4) {
     font-size: 0;
   }
   .picture {
-    height: 50vh;
-    margin-left: -205px;
+    max-height: 60%;
+    transform: translate(10%, 10%);
   }
   .descriptionBox {
     height: 50vh;
@@ -788,10 +789,6 @@ li:nth-child(4) {
 }
 
 @media screen and (max-width: 500px) {
-  .picture {
-    margin-left: -200px;
-  }
-
   .footer h1 {
     padding: 0rem;
     transform: translate(10%, -50%);
